@@ -1,10 +1,16 @@
-﻿using Problems = Csharp.LeetCodeChallenge;
+﻿using Csharp;
+using Problems = Csharp.LeetCodeChallenge;
 
-var answer1 = Problems.Two_Sum([2, 7, 11, 15], 9);
-Console.WriteLine(string.Join(',', answer1));
+var list1 = new ListNode(2, new ListNode(4));
+list1.next!.next = new ListNode(3);
 
-var answer2 = Problems.Two_Sum([3, 2, 4], 6);
-Console.WriteLine(string.Join(',', answer2));
+var list2 = new ListNode(5, new ListNode(6));
+list2.next!.next = new ListNode(4);
 
-var answer3 = Problems.Two_Sum([3, 3], 6);
-Console.WriteLine(string.Join(',', answer3));
+var result = Problems.AddTwoNumbers(list1, list2);
+
+while (result != null)
+{
+    Console.WriteLine(result.val);
+    result = result.next;
+}
