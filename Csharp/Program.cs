@@ -1,13 +1,7 @@
 ﻿using Problems = Csharp.LeetCodeChallenge;
 
-var a = Problems.LengthOfLongestSubstring("pwwkew");
+var a = Problems.FindMedianSortedArrays([1, 3], [2]);
 Console.WriteLine(a);
 
-var b = Problems.LengthOfLongestSubstring("abcabcbb");
+var b = Problems.FindMedianSortedArrays([1, 2], [3, 4]);
 Console.WriteLine(b);
-
-var c = Problems.LengthOfLongestSubstring("bbbbbb");
-Console.WriteLine(c);
-
-var d = Problems.LengthOfLongestSubstring(" ");
-Console.WriteLine(d);
